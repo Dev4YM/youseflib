@@ -238,9 +238,9 @@ nav a:hover {
 
 .contact form input {
   padding: 25px;
-  width: 50px;
-  height: 20px;
-  border: solid 2px #333;
+  width: 150px;
+  height: 15px;
+  border: solid 1px #333;
 }
 
 .contact form textarea {
@@ -249,9 +249,12 @@ nav a:hover {
 
 .contact form button {
   background: #333;
-  padding: 15px;
-  width: 30px;
+  width: 70px;
   height: 20px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
 }
 
 footer {
