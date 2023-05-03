@@ -237,14 +237,14 @@ nav a:hover {
   text-align: center;
 }
 
-.contact h2 {
+.contact h1 {
   font-size: 2em;
   margin-bottom: 30px;
 }
 
 .contact form {
   display: inline-block;
-  text-align: left;
+  text-align: right;
 }
 
 .contact label {
@@ -274,7 +274,7 @@ nav a:hover {
 }
 
 .contact button[type="submit"] {
-  background-color: #0077be;
+  background-color: #333;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -284,7 +284,7 @@ nav a:hover {
 }
 
 .contact button[type="submit"]:hover {
-  background-color: #005fa3;
+  background-color: #fff;
 }
 
 footer {
