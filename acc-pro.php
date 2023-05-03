@@ -9,7 +9,7 @@
 
        if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
        {
-           header('location:lo.php?error');
+           header('location:lo.html?error');
        }
        else
        {
@@ -17,12 +17,12 @@
 
            if(mail($to,$Subject,$Msg,$Email))
            {
-               header("location:lo.php?success");
+               header("location:lo.html?success");
            }
        }
     }
     else
     {
-        header("location:lo.php");
+        header("location:lo.html");
     }
 ?>
