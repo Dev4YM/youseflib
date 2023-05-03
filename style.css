@@ -245,7 +245,6 @@ nav a:hover {
 
 .contact form {
   display: inline-block;
-  text-align: right;
 }
 
 .contact label {
@@ -262,6 +261,7 @@ nav a:hover {
   border: none;
   border-radius: 3px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
 }
 
 .contact textarea {
@@ -272,6 +272,7 @@ nav a:hover {
 .contact textarea:focus {
   outline: none;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
 }
 
 .contact button[type="submit"] {
