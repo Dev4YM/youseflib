@@ -233,28 +233,58 @@ nav a:hover {
 }
 
 .contact {
+  padding: 50px;
   text-align: center;
 }
 
-.contact form input {
-  padding: 25px;
-  width: 150px;
-  height: 15px;
-  border: solid 1px #333;
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
 }
 
-.contact form textarea {
-  resize: vertically;
+.contact form {
+  display: inline-block;
+  text-align: left;
 }
 
-.contact form button {
-  background: #333;
-  width: 70px;
-  height: 20px;
-  cursor: pointer;
-  text-align: center;
+.contact label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 25rem;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact button[type="submit"] {
+  background-color: #0077be;
   color: #fff;
-  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.contact button[type="submit"]:hover {
+  background-color: #005fa3;
 }
 
 footer {
