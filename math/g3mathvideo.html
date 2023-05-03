@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Yousef Lib - Math 3rd Grade Videos</title>
+</head>
+<body>
+
+  <nav>
+    <h1><a href="https://youseflib.w3spaces.com/index.html"><i class="fa-solid fa-house"></i></a></h1>
+    <h1><a href="math.html"><i class="fa-solid fa-arrow-left"></i></a></h1>
+  </nav>
+
+  <section class="library">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            name=""
+            id="find"
+            placeholder="Search here for any Lesson..."
+            onkeyup="search()"
+          />
+        </div>
+        <br>
+        <br>
+        <div class="product-list">
+          <div class="video">
+            <h1>Go Math Textbook 3rd Grade. Lesson 1.1: Number Patterns: </h1>
+          <br>
+          <video id="1.1" src="g3mathvideos/1.1.mp4" controls></video>
+          </div>
+          <div class="video">
+            <h1>Go Math Textbook 3rd Grade. Lesson 1.2: Round to the Nearest Ten or Hundred: </h1>
+          <br>
+          <video id="1.2" src="g3mathvideos/1.2.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(80deg, #e66465, #9198e5);
+    font-family: sans-serif;
+    color: #fff;
+  }
+
+  .library {
+    text-align: center;
+    width: 90%;
+    height: 300vh;
+    background: rgba(0, 0, 0, 0.3);
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .library h1, video {
+    padding-top: 20px;
+  }
+
+  .library label {
+    cursor: text;
+  }
+
+  #find{
+      padding: 12px 20px;
+      display: inline-block;
+      border: 5px solid #ccc;
+      padding: 0 20px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      height: 25px;
+      display: flex;
+      font-size: 20px;
+      font-family: open sans, arial, helvetica, sans-serif;
+      outline: 0;
+      width: 700px;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+    }
+
+    .search i {
+      position: absolute;
+      left: 70vh;
+      margin-top: 10px;
+      font-size: 25px;
+      color: #000;
+    }
+    #find {
+      outline: 0;
+      margin: 5px;
+      height: 42px;
+      width: 600px;
+      line-height: 42px;
+      padding: 0 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #212121;
+      border: 0;
+      float: left;
+      -webkit-border-radius: 4px 0 0 4px;
+      border-radius: 4px 0 0 4px;
+    }
+    #find:placeholder{
+      color: internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    }
+    #find:focus{
+      outline: 0;
+      background-color: #FFF;
+    }
+
+    nav h1 a {
+  position: absolute;
+  top: 10%;
+  left: 1%;
+  font-size: 50px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+nav h1 a:hover {
+  color: #e66465;
+  background: #fff;
+  transition: 0.4s;
+}
+
+    nav h1:nth-child(2) a {
+      top: 20%;
+      left: 1.2%;
+    }
+  </style>
+  <script>
+    function search() {
+        let filter = document.getElementById("find").value.toUpperCase();
+        let item = document.querySelectorAll(".video");
+        let l = document.getElementsByTagName("h1");
+        for (var i = 0; i <= l.length; i++) {
+          let a = item[i].getElementsByTagName("h1")[0];
+          let value = a.innerHTML || a.innerText || a.textContent;
+          if (value.toUpperCase().indexOf(filter) > -1) {
+            item[i].style.display = "";
+          } else {
+            item[i].style.display = "none";
+          }
+        }
+      }
+  </script>
+</body>
+</html>

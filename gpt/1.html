@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food App</title>
+
+  <style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    * {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background-color: #f1f1f1;
+      }
+
+      header {
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        position: fixed;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        color: #333;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      nav li {
+        list-style: none;
+        margin-right: 20px;
+      }
+
+      nav li a {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.2s ease-in-out;
+      }
+
+      nav li a:hover {
+        color: #0077be;
+      }
+
+      #about {
+        background-color: #F8F8F8;
+        padding: 150px;
+        text-align: center;
+      }
+      
+      #about h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      
+      #about p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      #menu {
+        padding: 150px;
+      }
+
+      /* Style for the card elements */
+      .card {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        margin: 20px;
+        width: 300px;
+      }
+      
+      .card img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+      }
+      
+      .card-content {
+        padding: 20px;
+      }
+      
+      .card h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      .card p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      
+      .card button {
+        cursor: pointer;
+        background-color: #0077be;
+        border: none;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 16px;
+        padding: 10px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .card button:hover {
+        background-color: #005fa3;
+      }
+
+      #contact {
+        background-color: #f2f2f2;
+        padding: 50px;
+        text-align: center;
+      }
+
+      #contact h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+      }
+
+      #contact form {
+        display: inline-block;
+        text-align: left;
+      }
+
+      #contact label {
+        display: block;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      #contact input,
+      #contact textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 25rem;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      #contact textarea {
+        resize: vertical;
+      }
+
+      #contact input:focus,
+      #contact textarea:focus {
+        outline: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      #contact button[type="submit"] {
+        background-color: #0077be;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+      }
+
+      #contact button[type="submit"]:hover {
+        background-color: #005fa3;
+      }
+      
+      /* Style for the footer */
+      footer {
+        background: #fff;
+        padding: 50px 0;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+
+      footer h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      footer p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      footer ul li {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+
+      footer ul li a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      footer ul li a:hover {
+        color: #0077be;
+      }
+
+      footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      footer .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      footer .col-md-4 {
+        flex-basis: calc(33.33% - 20px);
+        margin-bottom: 40px;
+      }
+
+      footer .col-md-4:last-child {
+        margin-right: 0;
+      }
+
+      footer .col-md-4 h3 {
+        color: #0077be;
+        text-transform: uppercase;
+      }
+
+      footer .col-md-4 p:last-child {
+        margin-bottom: 0;
+      }
+
+      footer .col-md-4 p:first-child {
+        margin-top: 0;
+      }
+
+      footer .col-md-4 p:last-child {
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Food App</h1>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>This Website Was Fully Created By ChatGPT!</p>
+  </section>
+  
+  <section id="menu">
+    <blockquote><h1>Our Menu:</h1></blockquote>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Food+1" alt="Food 1" />
+      <div class="card-content">
+        <h2>Food Item 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Food+2" alt="Food 2" />
+      <div class="card-content">
+        <h2>Food Item 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Food+3" alt="Food 3" />
+      <div class="card-content">
+        <h2>Food Item 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Food+4" alt="Food 4" />
+      <div class="card-content">
+        <h2>Food Item 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Food+5" alt="Food 5" />
+      <div class="card-content">
+        <h2>Food Item 5</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Food+6" alt="Food 6" />
+      <div class="card-content">
+        <h2>Food Item 6</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="8" required></textarea>
+      
+      <br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>About Us</h3>
+          <p>This Website Was Fully Created By ChatGPT!</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Email: example@example.com</li>
+            <li>Phone: Example Phone Number</li>
+            <li>Address: Example Location</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>  
+</body>
+</html>
