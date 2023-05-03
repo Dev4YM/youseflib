@@ -236,6 +236,13 @@ nav a:hover {
   text-align: center;
 }
 
+.contact form input {
+  padding: 25px;
+  width: 50px;
+  height: 20px;
+  border: solid 2px #333;
+}
+
 .contact form textarea {
   resize: vertically;
 }
