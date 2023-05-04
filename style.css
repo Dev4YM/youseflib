@@ -199,14 +199,12 @@ nav a:hover {
 .about {
   text-align: center;
   width: 100%;
-  margin-right: 350px;
 }
 
 .about p {
   font-size: 24px;
   width: 400px;
   margin-bottom: 50px;
-  margin-right: -200px;
   text-align: center;
 }
 
