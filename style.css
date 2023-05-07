@@ -131,6 +131,52 @@ nav a:hover {
   font-size: 24px;
 }
 
+.container {
+			position: relative;
+			display: inline-block;
+		}
+		.edit-icon {
+			position: absolute;
+			top: 50%;
+			right: 190px;
+			transform: translateY(-50%);
+		}
+		.edit-icon:hover {
+			cursor: pointer;
+		}
+		.correct-icon {
+			display: none;
+			position: absolute;
+			top: 50%;
+			right: 175px;
+			transform: translateY(-50%);
+			color: green;
+			visibility: hidden;
+		}
+		.correct-icon:hover {
+			cursor: pointer;
+		}
+		.container.edit-mode .correct-icon {
+			display: block;
+			visibility: visible;
+		}
+		.cancel-icon {
+			display: none;
+			position: absolute;
+			top: 50%;
+			right: 195px;
+			transform: translateY(-50%);
+			color: red;
+			visibility: hidden;
+		}
+		.cancel-icon:hover {
+			cursor: pointer;
+		}
+		.container.edit-mode .cancel-icon {
+			display: block;
+			visibility: visible;
+		}
+
 /* Call to Action */
 .cta {
   display: inline-block;
