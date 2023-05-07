@@ -10,7 +10,6 @@ function editName() {
 			document.querySelector("#name").readOnly = true;
 			document.querySelector(".container").classList.remove("edit-mode");
             document.querySelector("#edit-btn").style.display = "block";
-            localStorage.setItem("nameInputValue", nameInput.value);
         }
 		function cancelEdit() {
             const nameInput = document.querySelector("#name");
