@@ -12,6 +12,13 @@
         <div>
           <h1><img src="img/logo.png" width="40" alt="logo">مكتبة يوسف</h1>
           <nav>
+		  <div dir="ltr" class="container">
+    <label for="name">أهلاً, </label>
+		<input type="text" id="name" readonly >
+		<i id="edit-btn" class="fas fa-edit edit-icon" onclick="editName()"></i>
+		<i class="fas fa-check correct-icon" onclick="updateName()"></i>
+        <i class="fas fa-times cancel-icon" onclick="cancelEdit()"></i>
+	</div>
             <ul>
               <li><a href="index.html">الرئيسية</a></li>
               <li><a href="#Library">مكتبتنا</a></li>
@@ -30,14 +37,6 @@
         وهذا ما تهدف إليه مكتبة يوسف:
         <br>
         حيث تقدم منصات ومواقع تعليمية متنوعة ومفيدة للطلاب في جميع المراحل التعليمية.</p>
-	<br>
-	<div class="container">
-    <label for="name">أهلاً, </label>
-		<input type="text" id="name" readonly >
-		<i id="edit-btn" class="fas fa-edit edit-icon" onclick="editName()"></i>
-		<i class="fas fa-check correct-icon" onclick="updateName()"></i>
-        <i class="fas fa-times cancel-icon" onclick="cancelEdit()"></i>
-	</div>
 	<br>
         <a href="#Library" class="cta">تعرف على مكتبتنا</a>
       </div>
