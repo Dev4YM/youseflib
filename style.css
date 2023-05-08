@@ -131,14 +131,14 @@ nav a:hover {
   font-size: 24px;
 }
 
-.container {
+.name {
 			position: relative;
 			display: inline-block;
 	font-size: 18px;
 	margin-right: 60vh;
 	margin-top: -50px;
 		}
-        .container input {
+        .name input {
         	width: 200px;
             height: 30px;
             cursor: default;
@@ -147,7 +147,7 @@ nav a:hover {
 		font-size: 18px;
 		color: #fff;
         }
-.container input:hover {
+.name input:hover {
 	border: 1px solid #fff;
 }
 		.edit-icon {
@@ -157,7 +157,7 @@ nav a:hover {
 			transform: translateY(-50%);
 			visibility: hidden;
 		}
-.container:hover .edit-icon {
+.name:hover .edit-icon {
 			visibility: visible;
 		}
 		.edit-icon:hover {
@@ -191,7 +191,7 @@ nav a:hover {
 		.cancel-icon:hover {
 			cursor: pointer;
 		}
-		.container.edit-mode .cancel-icon {
+		.name.edit-mode .cancel-icon {
 			display: block;
 			visibility: visible;
 		}
