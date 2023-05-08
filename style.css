@@ -135,7 +135,7 @@ nav a:hover {
 			position: relative;
 			display: inline-block;
 	font-size: 18px;
-	margin-right: 250px;
+	margin-right: 600px;
 		}
         .container input {
         	width: 200px;
@@ -152,7 +152,7 @@ nav a:hover {
 		.edit-icon {
 			position: absolute;
 			top: 50%;
-			right: 215px;
+			right: 200px;
 			transform: translateY(-50%);
 		}
 		.edit-icon:hover {
@@ -162,7 +162,7 @@ nav a:hover {
 			display: none;
 			position: absolute;
 			top: 50%;
-			right: 200px;
+			right: 180px;
 			transform: translateY(-50%);
 			color: green;
 			visibility: hidden;
@@ -178,7 +178,7 @@ nav a:hover {
 			display: none;
 			position: absolute;
 			top: 50%;
-			right: 220px;
+			right: 190px;
 			transform: translateY(-50%);
 			color: red;
 			visibility: hidden;
