@@ -182,7 +182,7 @@ nav a:hover {
 			display: none;
 			position: absolute;
 			top: 50%;
-			right: 200px;
+			right: 210px;
 			transform: translateY(-50%);
 			color: #fff;
 			visibility: hidden;
