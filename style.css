@@ -139,7 +139,11 @@ nav a:hover {
         	width: 200px;
             height: 30px;
             cursor: default;
+		border: none;
         }
+.container input:hover {
+	border: 1px solid #fff;
+}
 		.edit-icon {
 			position: absolute;
 			top: 50%;
