@@ -135,8 +135,7 @@ nav a:hover {
 			position: relative;
 			display: inline-block;
 	font-size: 24px;
-	margin-right: 90vh;
-	margin-top: -200px;
+	margin-right: 140vh;
 		}
         .name input {
         	width: 200px;
@@ -169,7 +168,7 @@ nav a:hover {
 			top: 50%;
 			right: 190px;
 			transform: translateY(-50%);
-			color: green;
+			color: #fff;
 			visibility: hidden;
 		}
 		.correct-icon:hover {
@@ -185,7 +184,7 @@ nav a:hover {
 			top: 50%;
 			right: 200px;
 			transform: translateY(-50%);
-			color: red;
+			color: #fff;
 			visibility: hidden;
 		}
 		.cancel-icon:hover {
