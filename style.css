@@ -134,12 +134,17 @@ nav a:hover {
 .container {
 			position: relative;
 			display: inline-block;
+	font-size: 18px;
+	margin-right: 250px;
 		}
         .container input {
         	width: 200px;
             height: 30px;
             cursor: default;
 		border: none;
+		background: #333;
+		font-size: 18px;
+		color: #fff;
         }
 .container input:hover {
 	border: 1px solid #fff;
