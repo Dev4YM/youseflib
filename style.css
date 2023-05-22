@@ -174,15 +174,15 @@ nav a:hover {
 		.correct-icon:hover {
 			cursor: pointer;
 		}
-		.container.edit-mode .correct-icon {
-			display: block;
+		.name.edit-mode .correct-icon {
+      display: block;
 			visibility: visible;
 		}
 		.cancel-icon {
 			display: none;
 			position: absolute;
 			top: 50%;
-			right: 215px;
+			right: 225px;
 			transform: translateY(-50%);
 			color: #fff;
 			visibility: hidden;
